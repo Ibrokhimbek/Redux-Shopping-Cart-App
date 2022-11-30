@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import "./Cart.css";
-import { addToCard, showCard, removeFromCart } from "./../store/card-slice";
+import { addToCard, removeFromCart } from "./../store/card-slice";
 const CartItem = ({ name, quantity, total, price, id }) => {
   const dispatch = useDispatch();
   const removeHandler = () => {

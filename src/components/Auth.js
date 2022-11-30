@@ -1,17 +1,20 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import useInputHook from "../hooks/useInputHook";
-import { login, logout } from "../store/auth-slice";
+import { login } from "../store/auth-slice";
 import "./Auth.css";
 
 const Auth = () => {
   const [pass, setPass] = useInputHook();
   const [username, setLogin] = useInputHook();
+
   const dispatch = useDispatch();
+
   const handleLogin = (e) => {
     e.preventDefault();
     dispatch(login({ pass, username }));
   };
+
   return (
     <div className="container">
       <h1>Login</h1>{" "}

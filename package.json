@@ -3,18 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@redux-devtools/cli": "^1.0.7",
     "@reduxjs/toolkit": "^1.7.2",
     "cra-template-redux": "1.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "remote-redux-devtools": "^0.5.16"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "redux-devtools": "redux-devtools --open=electron --hostname=localhost --port=8000"
   },
   "eslintConfig": {
     "extends": "react-app"
